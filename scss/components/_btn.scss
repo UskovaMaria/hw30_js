@@ -1,0 +1,58 @@
+.btn {
+  $bgColor: silver;
+  $brdColor: silver;
+  $color: black;
+
+  padding: 10px;
+  background: $bgColor;
+  border: 2px solid $bgColor;
+  color: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color .3s, color .3s;
+  cursor: pointer;
+
+  &_cart {
+    $size: 50px;
+    $bgColor: white;
+    $brdColor: #155515;
+    $color: #155515;
+
+    background: $bgColor;
+    color: $color;
+    border-color: $brdColor; 
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  &_close {
+    $size: 30px;
+    $bgColor: white;
+    $brdColor: #155515;
+    $color: #155515;
+
+    background: $bgColor;
+    color: $color;
+    border-color: $brdColor; 
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    font-size: initial;
+    padding: 0;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &:hover {
+    background: $color;
+    color: $bgColor;
+    border-color: $color; 
+  }
+}

@@ -1,0 +1,36 @@
+.cart {
+    $cartColor: #a9e1a9;
+
+    display: flex;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3a3a39;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+
+    i {
+        color: $cartColor;
+        font-size: 30px;
+        transition: color .3s;
+    }
+
+    &::after {
+        content: attr(data-count);
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 2px;
+        right: 15px;
+        
+    }
+
+    &:hover {
+        i {
+          color: darken($cartColor, 20);
+        }
+    }
+}
